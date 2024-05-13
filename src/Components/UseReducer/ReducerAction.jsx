@@ -6,7 +6,7 @@ export default function ReducerAction(state,action){
             return state + action.payload
 
             case 'SUB':
-                return state + action.payload
+                return state - action.payload
         
         default:
             break;
