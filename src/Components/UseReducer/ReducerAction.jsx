@@ -2,12 +2,16 @@ export default function ReducerAction(state,action){
 
     
     switch(action.type){
-        case 'ADD':
+        case 'ADD' :
             return state + action.payload
 
             case 'SUB':
                 return state - action.payload
-        
+                
+                
+
+          case 'RESET':
+            return action.payload
         default:
             break;
     }
